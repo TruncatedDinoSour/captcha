@@ -1,5 +1,7 @@
 # Captcha
 
+a fork of <https://github.com/lepture/captcha> with support of a lot more data
+
 A captcha library that generates audio and image CAPTCHAs.
 
 

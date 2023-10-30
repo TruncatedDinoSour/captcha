@@ -1,7 +1,7 @@
 [project]
-name = "captcha"
+name = "more-captcha"
 description = "A captcha library that generates audio and image CAPTCHAs."
-authors = [{name = "Hsiaoming Yang", email="me@lepture.com"}]
+authors = [{name = "Hsiaoming Yang", email="me@lepture.com"}, {name = "Ari Archer", email="ari.web.xyz@gmail.com"}]
 dependencies = [
   "Pillow",
 ]
@@ -22,13 +22,16 @@ classifiers = [
   "Programming Language :: Python :: 3.9",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
   "Programming Language :: Python :: Implementation :: CPython",
   "Topic :: Security",
 ]
 
 [project.urls]
 Documentation = "https://captcha.lepture.com/"
-Source = "https://github.com/lepture/captcha"
+Source = "https://ari-web.xyz/gh/captcha"
+Original = "https://github.com/lepture/captcha"
 
 [build-system]
 requires = ["setuptools"]

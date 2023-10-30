@@ -3,6 +3,8 @@ Captcha
 
 A captcha library that generates audio and image CAPTCHAs.
 
+a fork of <https://github.com/lepture/captcha> with support of a lot more data
+
 Features
 --------
 

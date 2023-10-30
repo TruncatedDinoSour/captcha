@@ -12,4 +12,5 @@
 
 __version__ = '0.5.0'
 __author__ = 'Hsiaoming Yang <me@lepture.com>'
-__homepage__ = 'https://github.com/lepture/captcha'
+__co_author__ = 'Ari Archer <ari.web.xyz@gmail.com>'
+__homepage__ = 'https://ari-web.xyz/gh/captcha'
