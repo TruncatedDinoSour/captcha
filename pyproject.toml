@@ -1,7 +1,7 @@
 [project]
 name = "more-captcha"
 description = "A captcha library that generates audio and image CAPTCHAs."
-authors = [{name = "Hsiaoming Yang", email="me@lepture.com"}, {name = "Ari Archer", email="ari.web.xyz@gmail.com"}]
+authors = [{name = "Hsiaoming Yang", email="me@lepture.com"}, {name = "Ari Archer", email="ari@ari.lt"}]
 dependencies = [
   "Pillow",
 ]
@@ -10,7 +10,7 @@ requires-python = ">=3.8"
 dynamic = ["version"]
 readme = "README.rst"
 classifiers = [
-  "Development Status :: 4 - Beta",
+  "Development Status :: 5 - Stable",
   "Environment :: Console",
   "Environment :: Web Environment",
   "Intended Audience :: Developers",
@@ -30,7 +30,7 @@ classifiers = [
 
 [project.urls]
 Documentation = "https://captcha.lepture.com/"
-Source = "https://ari-web.xyz/gh/captcha"
+Source = "https://ari.lt/gh/captcha"
 Original = "https://github.com/lepture/captcha"
 
 [build-system]

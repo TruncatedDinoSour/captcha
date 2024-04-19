@@ -15,7 +15,7 @@ A captcha library that generates audio and image CAPTCHAs.
 Install captcha with pip:
 
 ```
-pip install captcha
+pip install more-captcha
 ```
 
 ## Features
