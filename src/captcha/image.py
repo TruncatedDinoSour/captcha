@@ -105,18 +105,18 @@ class ImageCaptcha:
         font = random.choice(self.truefonts)
         _, _, w, h = draw.multiline_textbbox((1, 1), c, font=font)
 
-        dx1 = random.randint(0, 4)
-        dy1 = random.randint(0, 6)
+        dx1 = random.randint(0, 3)
+        dy1 = random.randint(0, 5)
         im = createImage('RGBA', (w + dx1, h + dy1))
         Draw(im).text((dx1, dy1), c, font=font, fill=color)
 
         # rotate
         im = im.crop(im.getbbox())
-        im = im.rotate(random.uniform(-30, 30), BILINEAR, expand=True)
+        im = im.rotate(random.uniform(-20,    20), BILINEAR, expand=True)
 
         # warp
-        dx2 = w * random.uniform(0.1, 0.3)
-        dy2 = h * random.uniform(0.2, 0.3)
+        dx2 = w * random.uniform(0.08, 0.18)
+        dy2 = h * random.uniform(0.08, 0.18)
         x1 = int(random.uniform(-dx2, dx2))
         y1 = int(random.uniform(-dy2, dy2))
         x2 = int(random.uniform(-dx2, dx2))
@@ -161,7 +161,7 @@ class ImageCaptcha:
         image = image.resize((width, self._height))
 
         average = int(text_width / len(chars))
-        rand = int(0.25 * average)
+        rand = int(0.1 * average)
         offset = int(average * 0.1)
 
         for im in images:
@@ -181,7 +181,7 @@ class ImageCaptcha:
         :param chars: text to be generated.
         """
         background = random_color(238, 255)
-        color = random_color(10, 200, random.randint(220, 255))
+        color = random_color(10, 200, random.randint(230, 255))
         im = self.create_captcha_image(chars, color, background)
         self.create_noise_dots(im, color)
         self.create_noise_curve(im, color)
