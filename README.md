@@ -1,3 +1,4 @@
+# This repository has been migrated to the self-hosted ari-web Forgejo instance: <https://git.ari.lt/ari/captcha>
 # Captcha
 
 a fork of <https://github.com/lepture/captcha> with support of a lot more data
